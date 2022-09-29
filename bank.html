@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Bank Account</title>
+</head>
+
+<body>
+    <section class="mt-12">
+        <div class="bank-container w-10/12 mx-auto md:p-9 lg:p-14 p-3">
+            <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-12">
+                <div class="deposit-section p-10 text-center">
+                    <h2 class="text-3xl font-semibold text-sky-400">Deposit Amount</h2>
+                    <h1 class="text-4xl font-bold text-sky-500">
+                        $ <span id="deposit">00</span>
+                    </h1>
+                </div>
+                <div class="withdraw-section p-10 text-center">
+                    <h2 class="text-3xl font-semibold text-sky-600"">Withdraw Amount</h2>
+          <h1 class=" text-4xl font-bold text-sky-700">
+                        $ <span id="withdraw">00</span>
+                        </h1>
+                </div>
+                <div class="balance-section p-10 text-center">
+                    <h2 class="text-3xl font-semibold text-sky-800">Total Balance</h2>
+                    <h1 class="text-4xl font-bold text-sky-900">
+                        $ <span id="balance">1020</span>
+                    </h1>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 grid-cols-1 gap-12 mt-20">
+                <div class="deposit p-10">
+                    <input type="text" class="pl-10 font-semibold" placeholder="Enter deposit amount" id="new-deposit">
+                    <div class="btn mt-6">
+                        <input type="submit" name="submit" class="button font-bold text-lg text-orange-500"
+                            value="Deposit" id="deposit-btn" />
+                    </div>
+                </div>
+                <div class="withdraw p-10">
+                    <input type="text" class="pl-10 font-semibold" placeholder="Enter withdraw amount"
+                        id="new-withdraw">
+                    <div class="btn mt-6">
+                        <input type="submit" name="submit" class="button font-bold text-lg text-orange-700"
+                            value="Withdraw" id="withdraw-btn" />
+                    </div>
+                </div>
+            </div>
+            <div></div>
+
+        </div>
+        </div>
+
+    </section>
+
+    <script src="js/utilities.js"></script>
+    <script src="js/deposite.js"></script>
+    <script src="js/withdraw.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>

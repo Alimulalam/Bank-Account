@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script src="https://kit.fontawesome.com/e873fedb02.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="wrap-login">
+            <from class="login-form">
+                <h1 class="login-text text-3xl font-bold">Please Login</h1>
+                <div class="wrap-input">
+                    <span class="input-label font-semibold">User Email</span>
+                    <i class="fas fa-user icon"></i>
+                    <input type="email" name="" class="user-input" id="email-field" placeholder="Enter Your Email">
+                </div>
+                <div class="wrap-input pass-input">
+                    <span class="input-label font-semibold">Password</span>
+                    <i class="fas fa-lock icon"></i>
+                    <input type="password" name="" class="user-input" id="password-field"
+                        placeholder="Enter Your Email">
+                    <i id="eye-icon" class="fa fa-eye eye"></i>
+                </div>
+                <div class="btn">
+                    <input type="submit" name="submit" class="button font-bold text-lg text-orange-600" value="Login"
+                        id="login-btn" />
+                </div>
+            </from>
+        </div>
+    </div>
+    <script src="js/login.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>
