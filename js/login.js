@@ -21,16 +21,15 @@ document.getElementById('login-btn').addEventListener('click', function () {
 document.getElementById('eye-icon').addEventListener('click', function () {
 
     const passwordValue = document.getElementById('password-field');
-
-    passwordValue.toggleAttribute('type');
-    // passwordValue.setAttribute('type', 'password');
+    const pass = passwordValue.getAttribute('type');
 
 
-    // const passwordValue = document.getElementById('password-field').removeAttribute("type");
+    if ('password' === pass) {
 
+        passwordValue.setAttribute('type', 'text');
+    }
+    else {
+        passwordValue.setAttribute('type', 'password');
+    }
 
-
-
-
-
-})
+});
